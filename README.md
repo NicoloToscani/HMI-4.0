@@ -13,4 +13,4 @@ The temperature value is read by the PLC using a WPF application with MVVM patte
 
 ## Consumer - Receive device to cloud messages
 To receive telemetry data from the cloud, you can listen to the communication channel established with the IoT HUB service.
-![](https://user-images.githubusercontent.com/12815808/39474502-9d6349d4-4d54-11e8-96f3-c17f14e5e1df.png)
+![](https://user-images.githubusercontent.com/12815808/39478035-71f52bd4-4d61-11e8-9f93-c9a3f0d942f1.png)
