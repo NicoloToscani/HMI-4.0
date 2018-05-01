@@ -18,21 +18,21 @@ namespace Siemens_HMI.Model
         // Cloud
         static string iotHubUri = "";
         static string deviceKey = "";
-        private DeviceClient deviceClient = DeviceClient.Create(iotHubUri, new DeviceAuthenticationWithRegistrySymmetricKey("plc", deviceKey), TransportType.Mqtt);
+        private DeviceClient deviceClient = DeviceClient.Create(iotHubUri, new DeviceAuthenticationWithRegistrySymmetricKey("", deviceKey), TransportType.Mqtt);
 
         
-        // Chiamo l'invio su cloud passando la temperatura che arriva dal sensore
+        // Send temperature to IoT Hub
         public void SendDeviceToCloudMessages(int temperature)
         {
             int messageId = 1;
             
-            // Definisco i 2 parametri da mandare su IoT Hub
+            // JSON data to send
 
                 
                 var telemetryDataPoint = new
                 {
                     messageId = messageId++,
-                    deviceId = "plc",
+                    deviceId = "",
                     temperature = temperature,
                     
                 };
