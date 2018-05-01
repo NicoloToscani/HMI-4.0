@@ -16,8 +16,8 @@ namespace Siemens_HMI.Model
 
         
         // Cloud
-        static string iotHubUri = "Ufficio.azure-devices.net";
-        static string deviceKey = "DvwcjShAMwNojbbUjnRf48b44xVzkFsxe6uu73+wPls=";
+        static string iotHubUri = "";
+        static string deviceKey = "";
         private DeviceClient deviceClient = DeviceClient.Create(iotHubUri, new DeviceAuthenticationWithRegistrySymmetricKey("plc", deviceKey), TransportType.Mqtt);
 
         
