@@ -10,3 +10,6 @@ For this example, a human machine interface (HMI) is used to read a temperature 
 The temperature value is read by the PLC using a WPF application with MVVM pattern, using the Sharp7 library.
 ![](https://user-images.githubusercontent.com/12815808/39473065-49452cf2-4d4d-11e8-8c8b-02bcb5a2dae1.png)
 ![](https://user-images.githubusercontent.com/12815808/39473417-136fd274-4d4f-11e8-8f4c-a73068da4fb2.png)
+
+## RECEIVING MESSAGE FROM CLOUD
+To receive telemetry data from the cloud, you can listen the communication channel established with the IoT HUB service.
