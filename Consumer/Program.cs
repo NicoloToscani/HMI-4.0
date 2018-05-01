@@ -10,7 +10,7 @@ namespace Consumer
 {
     class Program
     {
-        static string connectionString = "HostName=Ufficio.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=1hpwR1DYI/sj5mpc6v2d4ReRopi+ynj91zQEYJrGc18=";
+        static string connectionString = "";
         static string iotHubD2cEndpoint = "messages/events";
         static EventHubClient eventHubClient;
 
